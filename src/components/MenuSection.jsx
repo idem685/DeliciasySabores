@@ -135,14 +135,14 @@ const MenuSection = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: index * 0.05 }}
-                  className="menu-card flex gap-5"
+                  className="menu-card flex-col sm:flex-row gap-4 sm:gap-5 group"
                 >
                   {/* Imagen del plato */}
-                  <div className="w-24 h-24 flex-shrink-0 overflow-hidden">
+                  <div className="w-full sm:w-24 h-32 sm:h-24 flex-shrink-0 overflow-hidden">
                     <img
                       src={item.image}
                       alt={getLocalizedValue(item.name, i18n.language)}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       loading="lazy"
                     />
                   </div>

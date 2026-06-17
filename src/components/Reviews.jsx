@@ -6,10 +6,10 @@
 // Incluye diseño tipo testimonial cards con avatar, nombre y calificación.
 // =============================================================================
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect, useCallback, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { motion, AnimatePresence } from 'framer-motion'
-import { HiStar, HiChevronLeft, HiChevronRight } from 'react-icons/hi'
+import { HiStar, HiChevronLeft, HiChevronRight, HiPause, HiPlay } from 'react-icons/hi'
 
 import reviewsData from '../data/reviews.json'
 
@@ -39,6 +39,9 @@ const Reviews = () => {
   // Índice de la reseña visible actualmente en el carrusel
   const [currentIndex, setCurrentIndex] = useState(0)
   const [direction, setDirection] = useState(0)
+  const [autoPlay, setAutoPlay] = useState(true)
+  const [isHovered, setIsHovered] = useState(false)
+  const intervalRef = useRef(null)
 
   // Promedio de estrellas calculado una sola vez
   const averageRating = useMemo(() => {
@@ -53,16 +56,32 @@ const Reviews = () => {
     return dist
   }, [])
 
-  // Ir a la reseña anterior
-  const goToPrevious = () => {
-    setDirection(-1)
-    setCurrentIndex((prev) => (prev === 0 ? reviewsData.length - 1 : prev - 1))
-  }
-
-  // Ir a la reseña siguiente
-  const goToNext = () => {
+  // Ir a la reseña siguiente (usada por auto-play y botón)
+  const goToNext = useCallback(() => {
     setDirection(1)
     setCurrentIndex((prev) => (prev === reviewsData.length - 1 ? 0 : prev + 1))
+  }, [])
+
+  // Ir a la reseña anterior
+  const goToPrevious = useCallback(() => {
+    setDirection(-1)
+    setCurrentIndex((prev) => (prev === 0 ? reviewsData.length - 1 : prev - 1))
+  }, [])
+
+  // Auto-play: avanza cada 5 segundos. Se reinicia automáticamente al cambiar currentIndex
+  useEffect(() => {
+    if (autoPlay && !isHovered) {
+      intervalRef.current = setInterval(goToNext, 5000)
+    }
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current)
+      }
+    }
+  }, [autoPlay, isHovered, goToNext, currentIndex])
+
+  const toggleAutoPlay = () => {
+    setAutoPlay((prev) => !prev)
   }
 
   const currentReview = reviewsData[currentIndex]
@@ -142,7 +161,11 @@ const Reviews = () => {
         </motion.div>
 
         {/* ======== Carrusel de testimonios ======== */}
-        <div className="relative max-w-2xl mx-auto">
+        <div
+          className="relative max-w-2xl mx-auto"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
           {/* Botón anterior */}
           <button
             onClick={goToPrevious}
@@ -207,23 +230,39 @@ const Reviews = () => {
             <HiChevronRight size={28} />
           </button>
 
-          {/* Indicadores de posición (puntos) */}
-          <div className="flex justify-center gap-2 mt-8">
-            {reviewsData.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => {
-                  setDirection(index > currentIndex ? 1 : -1)
-                  setCurrentIndex(index)
-                }}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  index === currentIndex
-                    ? 'bg-secondary w-6'
-                    : 'bg-gray-300 hover:bg-gray-400'
-                }`}
-                aria-label={`Ir a reseña ${index + 1}`}
-              />
-            ))}
+          {/* Controles inferiores: indicadores + auto-play */}
+          <div className="flex items-center justify-center gap-3 mt-8">
+            {/* Indicadores de posición (puntos) */}
+            <div className="flex items-center gap-2">
+              {reviewsData.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => {
+                    setDirection((prev) => (index > prev ? 1 : -1))
+                    setCurrentIndex(index)
+                  }}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    index === currentIndex
+                      ? 'bg-secondary w-6'
+                      : 'bg-gray-300 hover:bg-gray-400'
+                  }`}
+                  aria-label={`Ir a reseña ${index + 1}`}
+                />
+              ))}
+            </div>
+
+            {/* Botón pausa/reproducir auto-play */}
+            <button
+              onClick={toggleAutoPlay}
+              className={`ml-2 p-1.5 rounded-full transition-all duration-300 ${
+                autoPlay
+                  ? 'text-text-lighter hover:text-primary'
+                  : 'text-secondary bg-secondary/10'
+              }`}
+              aria-label={autoPlay ? 'Pausar auto-play' : 'Activar auto-play'}
+            >
+              {autoPlay ? <HiPause size={16} /> : <HiPlay size={16} />}
+            </button>
           </div>
         </div>
       </div>

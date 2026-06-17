@@ -90,7 +90,7 @@ const Header = ({ onReserveClick }) => {
         transition-all duration-300 ease-out
         ${isScrolled
           ? 'bg-primary/95 backdrop-blur-md shadow-lg'
-          : 'bg-transparent'
+          : 'bg-gradient-to-b from-primary/80 to-transparent'
         }
       `}
     >
