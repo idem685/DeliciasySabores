@@ -40,7 +40,7 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="py-20 md:py-28 bg-white">
+    <section id="contact" className="py-20 md:py-28 bg-white scroll-mt-20 md:scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* ======== Encabezado de la sección ======== */}
         <motion.div

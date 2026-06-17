@@ -35,7 +35,7 @@ const About = () => {
   ]
 
   return (
-    <section id="about" className="py-20 md:py-28 bg-cream">
+    <section id="about" className="py-20 md:py-28 bg-cream scroll-mt-20 md:scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* ======== Grid de dos columnas: texto + imagen ======== */}
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">

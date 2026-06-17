@@ -45,7 +45,7 @@ const MenuSection = () => {
   const activeItems = menu?.[activeCategory] || []
 
   return (
-    <section id="menu" className="py-20 md:py-28 bg-white">
+    <section id="menu" className="py-20 md:py-28 bg-white scroll-mt-20 md:scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* ======== Encabezado de la sección ======== */}
         <motion.div
