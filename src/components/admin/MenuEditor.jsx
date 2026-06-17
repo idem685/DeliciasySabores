@@ -67,6 +67,8 @@ const MenuEditor = () => {
   const [isFormOpen, setIsFormOpen] = useState(false)
   // Idioma activo en el formulario de edición
   const [editLang, setEditLang] = useState('es')
+  // Método de carga de imagen ('url' o 'file')
+  const [uploadMode, setUploadMode] = useState('url')
 
   /**
    * Guarda el menú en localStorage
@@ -91,6 +93,8 @@ const MenuEditor = () => {
     if (typeof normalized.description === 'string') {
       normalized.description = { es: normalized.description, en: normalized.description, pt: normalized.description }
     }
+    // Detectar si la imagen es base64 para mostrar la solapa correcta
+    setUploadMode(typeof item.image === 'string' && item.image.startsWith('data:') ? 'file' : 'url')
     setEditingItem(normalized)
     setIsFormOpen(true)
     setEditLang('es')
@@ -101,6 +105,7 @@ const MenuEditor = () => {
    */
   const openNewForm = () => {
     setEditingItem({ ...EMPTY_ITEM, id: `new-${Date.now()}` })
+    setUploadMode('url')
     setIsFormOpen(true)
   }
 
@@ -338,18 +343,109 @@ const MenuEditor = () => {
                   />
                 </div>
 
-                {/* URL de imagen */}
+                {/* Imagen: URL o subida desde dispositivo */}
                 <div>
-                  <label className="block text-xs uppercase text-text-light font-medium mb-1">URL de imagen</label>
-                  <input
-                    type="text"
-                    value={editingItem.image}
-                    onChange={(e) => setEditingItem({ ...editingItem, image: e.target.value })}
-                    className="input-elegant"
-                    placeholder="https://..."
-                  />
+                  <label className="block text-xs uppercase text-text-light font-medium mb-1">Imagen</label>
+
+                  {/* Tabs para elegir método */}
+                  <div className="flex gap-1 mb-2">
+                    <label
+                      className={`flex-1 flex items-center justify-center gap-1.5 px-3 py-2 text-xs border cursor-pointer transition-colors ${
+                        uploadMode === 'file'
+                          ? 'bg-secondary/10 border-secondary text-secondary-dark'
+                          : 'bg-white border-primary/10 text-text-light hover:border-primary/30'
+                      }`}
+                    >
+                      <input
+                        type="radio"
+                        name="imageMode"
+                        checked={uploadMode === 'file'}
+                        onChange={() => setUploadMode('file')}
+                        className="hidden"
+                      />
+                      📁 Subir archivo
+                    </label>
+                    <label
+                      className={`flex-1 flex items-center justify-center gap-1.5 px-3 py-2 text-xs border cursor-pointer transition-colors ${
+                        uploadMode === 'url'
+                          ? 'bg-secondary/10 border-secondary text-secondary-dark'
+                          : 'bg-white border-primary/10 text-text-light hover:border-primary/30'
+                      }`}
+                    >
+                      <input
+                        type="radio"
+                        name="imageMode"
+                        checked={uploadMode === 'url'}
+                        onChange={() => setUploadMode('url')}
+                        className="hidden"
+                      />
+                      🔗 URL
+                    </label>
+                  </div>
+
+                  {uploadMode === 'file' ? (
+                    <div>
+                      <label className="flex items-center justify-center w-full border-2 border-dashed border-primary/20 hover:border-secondary/40 transition-colors cursor-pointer py-6 px-4 bg-white">
+                        <input
+                          type="file"
+                          accept="image/*"
+                          className="hidden"
+                          onChange={(e) => {
+                            const file = e.target.files?.[0]
+                            if (!file) return
+                            if (file.size > 5 * 1024 * 1024) {
+                              alert('La imagen no debe superar los 5 MB')
+                              return
+                            }
+                            const reader = new FileReader()
+                            reader.onload = (ev) => {
+                              setEditingItem((prev) => ({
+                                ...prev,
+                                image: ev.target?.result,
+                              }))
+                            }
+                            reader.readAsDataURL(file)
+                          }}
+                        />
+                        <div className="text-center">
+                          <span className="text-2xl block mb-2">📸</span>
+                          <span className="text-xs text-text-light">
+                            {t('admin.subirImagen') || 'Toca o arrastra una foto aquí'}
+                          </span>
+                          <span className="text-[10px] text-text-lighter block mt-1">
+                            PNG, JPG, WebP — Máx 5 MB
+                          </span>
+                        </div>
+                      </label>
+                    </div>
+                  ) : (
+                    <input
+                      type="text"
+                      value={editingItem.image?.startsWith('data:') ? '' : editingItem.image}
+                      onChange={(e) => setEditingItem({ ...editingItem, image: e.target.value })}
+                      className="input-elegant"
+                      placeholder="https://ejemplo.com/imagen.jpg"
+                    />
+                  )}
+
+                  {/* Preview */}
                   {editingItem.image && (
-                    <img src={editingItem.image} alt="Preview" className="w-16 h-16 object-cover mt-2" />
+                    <div className="relative mt-2 w-20 h-20 group">
+                      <img
+                        src={editingItem.image}
+                        alt="Preview"
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          e.target.style.display = 'none'
+                        }}
+                      />
+                      <button
+                        onClick={() => { setEditingItem({ ...editingItem, image: '' }); setUploadMode('url'); }}
+                        className="absolute -top-1.5 -right-1.5 bg-red-500 text-white rounded-full p-0.5 opacity-0 group-hover:opacity-100 transition-opacity"
+                      >
+                        <HiX size={14} />
+                      </button>
+                    </div>
                   )}
                 </div>
 
