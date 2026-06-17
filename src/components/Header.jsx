@@ -96,16 +96,20 @@ const Header = ({ onReserveClick }) => {
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* ======== Logo tipográfico a la izquierda ======== */}
+          {/* ======== Logo a la izquierda ======== */}
           <a
             href="/"
             onClick={(e) => {
               e.preventDefault()
               handleNavClick('#hero')
             }}
-            className="font-serif text-xl md:text-2xl font-semibold text-cream hover:text-secondary transition-colors"
+            className="flex items-center shrink-0"
           >
-            Delicias & Sabores
+            <img
+              src="/logo.png"
+              alt="Delicias & Sabores"
+              className="h-10 md:h-12 w-auto object-contain hover:opacity-80 transition-opacity"
+            />
           </a>
 
           {/* ======== Navegación de escritorio ======== */}
