@@ -1,0 +1,50 @@
+[
+  {
+    "id": "rev-1",
+    "name": "Laura Martínez",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80",
+    "rating": 5,
+    "date": "2024-10-15",
+    "text": "Una experiencia gastronómica inolvidable. El risotto de hongos silvestres es simplemente espectacular. La atención es impecable y el ambiente, mágico. Volveremos sin dudas."
+  },
+  {
+    "id": "rev-2",
+    "name": "Carlos Rodríguez",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
+    "rating": 5,
+    "date": "2024-10-10",
+    "text": "Celebramos nuestro aniversario aquí y fue perfecto. El menú degustación es una obra de arte. Cada plato cuenta una historia. El maridaje de vinos que recomendaron fue excelente."
+  },
+  {
+    "id": "rev-3",
+    "name": "Ana Sofía López",
+    "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80",
+    "rating": 4,
+    "date": "2024-10-05",
+    "text": "Los postres son de otro nivel. El Tiramisú Clásico y el Volcán de Chocolate son imperdibles. El único detalle es que la carta de vinos podría tener más opciones por copa."
+  },
+  {
+    "id": "rev-4",
+    "name": "Martín Fernández",
+    "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80",
+    "rating": 5,
+    "date": "2024-09-28",
+    "text": "De los mejores restaurantes de Buenos Aires. La terraza al atardecer es un espectáculo. El servicio es atento sin ser invasivo. Recomiendo el Bife de Chorizo Premium."
+  },
+  {
+    "id": "rev-5",
+    "name": "Valentina Torres",
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80",
+    "rating": 5,
+    "date": "2024-09-20",
+    "text": "Un rincón de ensueño. La decoración es elegante y acogedora. Probé el Maracuyá Sour y es el mejor cóctel que he tomado. La burrata de entrada, imperdible."
+  },
+  {
+    "id": "rev-6",
+    "name": "Diego García",
+    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80",
+    "rating": 4,
+    "date": "2024-09-15",
+    "text": "Excelente opción para una cena de negocios. El ambiente es sofisticado pero relajado. La pasta artesanal al pesto me transportó a Italia. El único pero es el estacionamiento."
+  }
+]

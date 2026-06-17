@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "inicio": "Home",
+    "menu": "Menu",
+    "galeria": "Gallery",
+    "reservas": "Reservations",
+    "contacto": "Contact",
+    "reservarMesa": "Book a Table",
+    "admin": "Admin"
+  },
+  "hero": {
+    "titulo": "Flavors that",
+    "tituloSpan": "tell stories",
+    "subtitulo": "Artisanal pastry and signature cuisine in the heart of the city. A gastronomic experience that awakens all the senses.",
+    "verMenu": "View Menu",
+    "reservarAhora": "Book Now"
+  },
+  "days": {
+    "lunes": "Monday",
+    "martes": "Tuesday",
+    "miercoles": "Wednesday",
+    "jueves": "Thursday",
+    "viernes": "Friday",
+    "sabado": "Saturday",
+    "domingo": "Sunday"
+  },
+  "about": {
+    "etiqueta": "Our Story",
+    "titulo1": "Where tradition",
+    "titulo2": "meets innovation",
+    "parrafo1": "Founded in 2015 by chef María Elena Torres and her husband Carlos, Delicias & Sabores was born from the dream of creating a space where artisanal pastry and signature cuisine merge into a unique gastronomic experience.",
+    "parrafo2": "With over 20 years of experience in fine pastry and international cuisine, María Elena has created a menu that changes with the seasons, using fresh ingredients from local producers and cutting-edge techniques that surprise even the most demanding palate.",
+    "cita": "Every dish tells a story",
+    "sellos": {
+      "frescos": "Fresh Products",
+      "frescosDesc": "We select the best ingredients from local and seasonal producers.",
+      "ambiente": "Unique Atmosphere",
+      "ambienteDesc": "An elegantly designed space to create unforgettable moments.",
+      "atencion": "Personalized Service",
+      "atencionDesc": "Our team is dedicated to providing exceptional service to every guest."
+    }
+  },
+  "tags": {
+    "vegetariano": "Vegetarian",
+    "vegano": "Vegan",
+    "sin-tacc": "Gluten Free",
+    "recomendado": "Recommended"
+  },
+  "menu": {
+    "etiqueta": "Our Menu",
+    "titulo": "Explore our",
+    "tituloSpan": "menu",
+    "subtitulo": "A carefully curated selection to awaken your senses",
+    "cargando": "Loading our menu...",
+    "error": "Could not load the menu at this time.",
+    "reintentar": "Try again",
+    "vacio": "We'll have news in this category soon.",
+    "categorias": {
+      "entradas": "Starters",
+      "principales": "Main Courses",
+      "postres": "Desserts",
+      "bebidas": "Drinks & Cocktails"
+    }
+  },
+  "gallery": {
+    "etiqueta": "Gallery",
+    "titulo": "Moments that",
+    "tituloSpan": "inspire",
+    "subtitulo": "Discover the unique atmosphere of our space through these images"
+  },
+  "reservations": {
+    "titulo": "Book a Table",
+    "subtitulo": "Fill out the form and we'll save your reservation",
+    "confirmado": "Reservation Confirmed!",
+    "confirmadoMsg": "Your reservation has been saved successfully. We look forward to seeing you!",
+    "cerrar": "Close",
+    "fecha": "Date",
+    "hora": "Time",
+    "seleccionarHora": "Select time",
+    "comensales": "Guests",
+    "persona": "person",
+    "personas": "people",
+    "nombre": "Full Name",
+    "nombrePlaceholder": "Your name",
+    "telefono": "Phone",
+    "telefonoPlaceholder": "+54 11 1234-5678",
+    "email": "Email",
+    "emailPlaceholder": "you@email.com",
+    "notas": "Notes or preferences",
+    "notasPlaceholder": "Allergies, special occasion, seating preference...",
+    "opcional": "optional",
+    "confirmar": "Confirm Reservation",
+    "procesando": "Processing...",
+    "terminos": "By reserving, you accept our terms and conditions. Your data is stored locally in your browser.",
+    "requiredFecha": "Date is required",
+    "fechaFutura": "Date must be today or later",
+    "requiredHora": "Time is required",
+    "requiredComensales": "Number of guests is required",
+    "minComensales": "At least 1 guest required",
+    "maxComensales": "Maximum 12 guests",
+    "requiredNombre": "Name is required",
+    "minNombre": "Name must be at least 2 characters",
+    "maxNombre": "Name cannot exceed 80 characters",
+    "requiredTelefono": "Phone is required",
+    "patternTelefono": "Invalid phone format",
+    "requiredEmail": "Email is required",
+    "patternEmail": "Invalid email format",
+    "maxNotas": "Notes cannot exceed 500 characters"
+  },
+  "contact": {
+    "etiqueta": "Contact",
+    "titulo": "Visit us or",
+    "tituloSpan": "write us",
+    "subtitulo": "We are in the heart of the city. Book your experience or just stop by to say hello.",
+    "direccion": "Address",
+    "telefono": "Phone",
+    "email": "Email",
+    "horarios": "Hours",
+    "notaHorarios": "* Continuous kitchen service. Last order 30 min before closing.",
+    "cocinaUltimo": "* Continuous kitchen service. Last order 30 min before closing."
+  },
+  "footer": {
+    "descripcion": "Luxury Restaurant & Confectionery. Artisanal pastry and signature cuisine in the heart of Buenos Aires.",
+    "enlaces": "Links",
+    "direccion": "Address",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Receive our news and exclusive promotions.",
+    "newsletterGracias": "Thank you for subscribing! 🎉",
+    "newsletterPlaceholder": "you@email.com",
+    "copyright": "All rights reserved.",
+    "hecho": "Made with",
+    "suscribir": "Subscribe",
+    "y": "and artisan flavors"
+  },
+  "reviews": {
+    "etiqueta": "Reviews",
+    "titulo": "What our",
+    "tituloSpan": "clients say",
+    "subtitulo": "The opinion of those who visit us is our best business card"
+  },
+  "admin": {
+    "login": "Sign In",
+    "loginDesc": "Enter your credentials to access the admin panel",
+    "password": "Password",
+    "ingresar": "Sign In",
+    "error": "Incorrect password",
+    "panel": "Admin Panel",
+    "cerrarSesion": "Log Out",
+    "menu": "Menu Management",
+    "reservas": "Reservations Management",
+    "agregar": "Add Item",
+    "editar": "Edit",
+    "eliminar": "Delete",
+    "guardar": "Save Changes",
+    "exportar": "Export Menu",
+    "cancelar": "Cancel",
+    "sinReservas": "No reservations registered",
+    "comensales": "guests",
+    "volver": "Back to Site"
+  },
+  "toast": {
+    "successTitle": "Successful operation",
+    "errorTitle": "Error"
+  },
+  "whatsapp": {
+    "ariaLabel": "Contact us on WhatsApp"
+  },
+  "idioma": {
+    "label": "Language",
+    "es": "Español",
+    "en": "English",
+    "pt": "Português"
+  }
+}

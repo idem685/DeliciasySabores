@@ -1,0 +1,130 @@
+/* =============================================================================
+ * Estilos Globales - Delicias & Sabores
+ * =============================================================================
+ * Aquí importamos TailwindCSS y definimos estilos base personalizados.
+ * TailwindCSS inyecta sus utilidades a través de las directivas @tailwind.
+ * ============================================================================= */
+
+/* Importar las capas base de TailwindCSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =============================================================================
+ * Estilos Base Personalizados
+ * ============================================================================= */
+
+@layer base {
+  /* Scroll suave para toda la página (navegación por anclas) */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-text bg-cream antialiased;
+  }
+
+  /* Selección de texto personalizada (dorado) */
+  ::selection {
+    @apply bg-secondary/30 text-primary;
+  }
+
+  /* Scrollbar personalizado (para navegadores que lo soporten) */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-cream;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-secondary/40 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-secondary/60;
+  }
+}
+
+/* =============================================================================
+ * Componentes Personalizados (utilitarios reutilizables)
+ * ============================================================================= */
+
+@layer components {
+  /* Botón primario elegante (fondo oscuro con texto claro) */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 
+           bg-primary text-cream font-medium text-sm
+           rounded-none border border-primary
+           transition-all duration-300 ease-out
+           hover:bg-primary/90 hover:shadow-lg
+           focus:outline-none focus:ring-2 focus:ring-secondary/50;
+  }
+
+  /* Botón secundario dorado (el destacado) */
+  .btn-gold {
+    @apply inline-flex items-center justify-center px-6 py-3 
+           bg-secondary text-primary font-medium text-sm
+           rounded-none border border-secondary
+           transition-all duration-300 ease-out
+           hover:bg-secondary/90 hover:shadow-lg hover:shadow-secondary/20
+           focus:outline-none focus:ring-2 focus:ring-secondary/50;
+  }
+
+  /* Botón outline (con borde, sin relleno) */
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 
+           bg-transparent text-cream font-medium text-sm
+           rounded-none border border-cream/60
+           transition-all duration-300 ease-out
+           hover:bg-cream/10 hover:border-cream
+           focus:outline-none focus:ring-2 focus:ring-cream/30;
+  }
+
+  /* Título de sección con línea decorativa dorada */
+  .section-title {
+    @apply font-serif text-3xl md:text-4xl lg:text-5xl text-primary font-semibold;
+  }
+
+  .section-subtitle {
+    @apply text-text-light text-base md:text-lg max-w-2xl mx-auto;
+  }
+
+  /* Línea decorativa dorada */
+  .gold-divider {
+    @apply w-16 h-0.5 bg-secondary mx-auto my-6;
+  }
+
+  /* Card elegante para el menú */
+  .menu-card {
+    @apply bg-white border border-secondary/20 p-6 
+           transition-all duration-300 ease-out
+           hover:border-secondary/60 hover:shadow-lg hover:shadow-secondary/5;
+  }
+
+  /* Input elegante para formularios */
+  .input-elegant {
+    @apply w-full px-4 py-3 bg-white border border-primary/10 
+           text-text placeholder-text-lighter/60
+           transition-all duration-200
+           focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary/30;
+  }
+}
+
+/* =============================================================================
+ * Utilidades Adicionales
+ * ============================================================================= */
+
+@layer utilities {
+  /* Gradiente de texto dorado */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-secondary to-secondary-light;
+  }
+
+  /* Animación de retraso para framer-motion */
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+}

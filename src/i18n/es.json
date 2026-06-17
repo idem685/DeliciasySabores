@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "inicio": "Inicio",
+    "menu": "Menú",
+    "galeria": "Galería",
+    "reservas": "Reservas",
+    "contacto": "Contacto",
+    "reservarMesa": "Reservar Mesa",
+    "admin": "Admin"
+  },
+  "hero": {
+    "titulo": "Sabores que",
+    "tituloSpan": "cuentan historias",
+    "subtitulo": "Repostería artesanal y cocina de autor en el corazón de la ciudad. Una experiencia gastronómica que despierta todos los sentidos.",
+    "verMenu": "Ver Menú",
+    "reservarAhora": "Reservar Ahora"
+  },
+  "days": {
+    "lunes": "Lunes",
+    "martes": "Martes",
+    "miercoles": "Miércoles",
+    "jueves": "Jueves",
+    "viernes": "Viernes",
+    "sabado": "Sábado",
+    "domingo": "Domingo"
+  },
+  "about": {
+    "etiqueta": "Nuestra Historia",
+    "titulo1": "Donde la tradición",
+    "titulo2": "encuentra la innovación",
+    "parrafo1": "Fundado en 2015 por la chef María Elena Torres y su esposo Carlos, Delicias & Sabores nació del sueño de crear un espacio donde la repostería artesanal y la cocina de autor se fusionaran en una experiencia gastronómica única.",
+    "parrafo2": "Con más de 20 años de experiencia en pastelería fina y cocina internacional, María Elena ha creado una carta que cambia con las estaciones, utilizando ingredientes frescos de productores locales y técnicas vanguardistas que sorprenden hasta al paladar más exigente.",
+    "cita": "Cada plato cuenta una historia",
+    "sellos": {
+      "frescos": "Productos Frescos",
+      "frescosDesc": "Seleccionamos los mejores ingredientes de productores locales y estacionales.",
+      "ambiente": "Ambiente Único",
+      "ambienteDesc": "Un espacio elegantemente diseñado para crear momentos inolvidables.",
+      "atencion": "Atención Personalizada",
+      "atencionDesc": "Nuestro equipo se dedica a brindar un servicio excepcional a cada comensal."
+    }
+  },
+  "tags": {
+    "vegetariano": "Vegetariano",
+    "vegano": "Vegano",
+    "sin-tacc": "Sin TACC",
+    "recomendado": "Recomendado"
+  },
+  "menu": {
+    "etiqueta": "Nuestra Carta",
+    "titulo": "Explorá nuestro",
+    "tituloSpan": "menú",
+    "subtitulo": "Una selección cuidadosamente elaborada para despertar tus sentidos",
+    "cargando": "Cargando nuestro menú...",
+    "error": "No pudimos cargar el menú en este momento.",
+    "reintentar": "Intentar de nuevo",
+    "vacio": "Pronto tendremos novedades en esta categoría.",
+    "categorias": {
+      "entradas": "Entradas",
+      "principales": "Platos Principales",
+      "postres": "Postres",
+      "bebidas": "Bebidas & Coctelería"
+    }
+  },
+  "gallery": {
+    "etiqueta": "Galería",
+    "titulo": "Momentos que",
+    "tituloSpan": "inspiran",
+    "subtitulo": "Descubrí la atmósfera única de nuestro espacio a través de estas imágenes"
+  },
+  "reservations": {
+    "titulo": "Reservar Mesa",
+    "subtitulo": "Completá el formulario y guardaremos tu reserva",
+    "confirmado": "¡Reserva Confirmada!",
+    "confirmadoMsg": "Tu reserva ha sido guardada correctamente. ¡Te esperamos!",
+    "cerrar": "Cerrar",
+    "fecha": "Fecha",
+    "hora": "Hora",
+    "seleccionarHora": "Seleccionar hora",
+    "comensales": "Comensales",
+    "persona": "persona",
+    "personas": "personas",
+    "nombre": "Nombre Completo",
+    "nombrePlaceholder": "Tu nombre",
+    "telefono": "Teléfono",
+    "telefonoPlaceholder": "+54 11 1234-5678",
+    "email": "Email",
+    "emailPlaceholder": "tu@email.com",
+    "notas": "Notas o preferencias",
+    "notasPlaceholder": "Alergias, ocasión especial, preferencia de ubicación...",
+    "opcional": "opcional",
+    "confirmar": "Confirmar Reserva",
+    "procesando": "Procesando...",
+    "terminos": "Al reservar, aceptas nuestros términos y condiciones. Tus datos se guardan de forma local en tu navegador.",
+    "requiredFecha": "La fecha es obligatoria",
+    "fechaFutura": "La fecha debe ser hoy o futura",
+    "requiredHora": "La hora es obligatoria",
+    "requiredComensales": "El número de comensales es obligatorio",
+    "minComensales": "Debe haber al menos 1 comensal",
+    "maxComensales": "Máximo 12 comensales",
+    "requiredNombre": "El nombre es obligatorio",
+    "minNombre": "El nombre debe tener al menos 2 caracteres",
+    "maxNombre": "El nombre no puede exceder 80 caracteres",
+    "requiredTelefono": "El teléfono es obligatorio",
+    "patternTelefono": "Formato de teléfono inválido",
+    "requiredEmail": "El email es obligatorio",
+    "patternEmail": "Formato de email inválido",
+    "maxNotas": "Las notas no pueden exceder 500 caracteres"
+  },
+  "contact": {
+    "etiqueta": "Contacto",
+    "titulo": "Visitanos o",
+    "tituloSpan": "escribinos",
+    "subtitulo": "Estamos en el corazón de la ciudad. Reservá tu experiencia o simplemente pasá a saludar.",
+    "direccion": "Dirección",
+    "telefono": "Teléfono",
+    "email": "Email",
+    "horarios": "Horarios",
+    "notaHorarios": "* Horario de cocina continua. Último pedido 30 min antes del cierre.",
+    "cocinaUltimo": "* Horario de cocina continua. Último pedido 30 min antes del cierre."
+  },
+  "footer": {
+    "descripcion": "Restaurante & Confitería de Lujo. Repostería artesanal y cocina de autor en el corazón de Buenos Aires.",
+    "enlaces": "Enlaces",
+    "direccion": "Dirección",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Recibí nuestras novedades y promociones exclusivas.",
+    "newsletterGracias": "¡Gracias por suscribirte! 🎉",
+    "newsletterPlaceholder": "tu@email.com",
+    "copyright": "Todos los derechos reservados.",
+    "hecho": "Hecho con",
+    "suscribir": "Suscribirse",
+    "y": "y sabores artesanales"
+  },
+  "reviews": {
+    "etiqueta": "Reseñas",
+    "titulo": "Lo que dicen",
+    "tituloSpan": "nuestros clientes",
+    "subtitulo": "La opinión de quienes nos visitan es nuestra mejor carta de presentación"
+  },
+  "admin": {
+    "login": "Inicio de Sesión",
+    "loginDesc": "Ingresá tus credenciales para acceder al panel de administración",
+    "password": "Contraseña",
+    "ingresar": "Ingresar",
+    "error": "Contraseña incorrecta",
+    "panel": "Panel de Administración",
+    "cerrarSesion": "Cerrar Sesión",
+    "menu": "Gestión del Menú",
+    "reservas": "Gestión de Reservas",
+    "agregar": "Agregar Ítem",
+    "editar": "Editar",
+    "eliminar": "Eliminar",
+    "guardar": "Guardar Cambios",
+    "exportar": "Exportar Menu",
+    "cancelar": "Cancelar",
+    "sinReservas": "No hay reservas registradas",
+    "comensales": "comensales",
+    "volver": "Volver al Sitio"
+  },
+  "toast": {
+    "successTitle": "Operación exitosa",
+    "errorTitle": "Error"
+  },
+  "whatsapp": {
+    "ariaLabel": "Contactar por WhatsApp"
+  },
+  "idioma": {
+    "label": "Idioma",
+    "es": "Español",
+    "en": "English",
+    "pt": "Português"
+  }
+}

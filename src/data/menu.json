@@ -1,0 +1,282 @@
+{
+  "entradas": [
+    {
+      "id": "ent-1",
+      "name": {
+        "es": "Burrata con Tomates Confitados",
+        "en": "Burrata with Confit Tomatoes",
+        "pt": "Burrata com Tomates Confitados"
+      },
+      "description": {
+        "es": "Burrata cremosa sobre cama de tomates cherry confitados, albahaca fresca y reducción de aceto balsámico.",
+        "en": "Creamy burrata on a bed of confit cherry tomatoes, fresh basil, and balsamic reduction.",
+        "pt": "Burrata cremosa sobre cama de tomates cereja confitados, manjericão fresco e redução de aceto balsâmico."
+      },
+      "price": 5800,
+      "image": "https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=600",
+      "tags": ["vegetariano", "recomendado"],
+      "featured": true
+    },
+    {
+      "id": "ent-2",
+      "name": {
+        "es": "Carpaccio de Langostinos",
+        "en": "Prawn Carpaccio",
+        "pt": "Carpaccio de Lagostins"
+      },
+      "description": {
+        "es": "Finas láminas de langostino fresco marinado en cítricos, con rúcula, parmesano y dressing de mostaza y miel.",
+        "en": "Thin slices of fresh prawn marinated in citrus, with arugula, parmesan, and honey mustard dressing.",
+        "pt": "Finas lâminas de lagostim fresco marinado em cítricos, com rúcula, parmesão e molho de mostarda e mel."
+      },
+      "price": 6500,
+      "image": "https://images.unsplash.com/photo-1559847844-5315695dadae?w=600",
+      "tags": ["recomendado"],
+      "featured": false
+    },
+    {
+      "id": "ent-3",
+      "name": {
+        "es": "Hummus de Remolacha",
+        "en": "Beetroot Hummus",
+        "pt": "Homus de Beterraba"
+      },
+      "description": {
+        "es": "Hummus cremoso de remolacha asada con tahini, ajonjolí, aceite de oliva y pan pita crocante.",
+        "en": "Creamy beetroot hummus with tahini, sesame, olive oil, and crispy pita bread.",
+        "pt": "Homus cremoso de beterraba assada com tahine, gergelim, azeite de oliva e pão pita crocante."
+      },
+      "price": 4200,
+      "image": "https://images.unsplash.com/photo-1577805947697-89e18249d767?w=600",
+      "tags": ["vegano", "vegetariano", "sin-tacc"],
+      "featured": false
+    },
+    {
+      "id": "ent-4",
+      "name": {
+        "es": "Ostras Frescas",
+        "en": "Fresh Oysters",
+        "pt": "Ostras Frescas"
+      },
+      "description": {
+        "es": "Media docena de ostras frescas del día servidas con limón, salsa mignonette y granitas de wasabi.",
+        "en": "Half a dozen fresh daily oysters served with lemon, mignonette sauce, and wasabi granita.",
+        "pt": "Meia dúzia de ostras frescas do dia servidas com limão, molho mignonette e granita de wasabi."
+      },
+      "price": 7800,
+      "image": "https://images.unsplash.com/photo-1590614632027-76e34c41bbe1?w=600",
+      "tags": ["recomendado"],
+      "featured": true
+    }
+  ],
+  "principales": [
+    {
+      "id": "pri-1",
+      "name": {
+        "es": "Risotto de Hongos Silvestres",
+        "en": "Wild Mushroom Risotto",
+        "pt": "Risoto de Cogumelos Silvestres"
+      },
+      "description": {
+        "es": "Risotto cremoso con mix de hongos silvestres, parmesano envejecido y trufa negra rallada.",
+        "en": "Creamy risotto with a mix of wild mushrooms, aged parmesan, and shaved black truffle.",
+        "pt": "Risoto cremoso com mix de cogumelos silvestres, parmesão envelhecido e trufa negra ralada."
+      },
+      "price": 8900,
+      "image": "https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=600",
+      "tags": ["vegetariano", "recomendado"],
+      "featured": true
+    },
+    {
+      "id": "pri-2",
+      "name": {
+        "es": "Salmón Glaseado con Miso",
+        "en": "Miso-Glazed Salmon",
+        "pt": "Salmão Glaceado com Missô"
+      },
+      "description": {
+        "es": "Salmón fresco glaseado con miso y miel, acompañado de verduras salteadas y arroz jazmín.",
+        "en": "Fresh salmon glazed with miso and honey, served with stir-fried vegetables and jasmine rice.",
+        "pt": "Salmão fresco glaceado com missô e mel, acompanhado de legumes salteados e arroz jasmim."
+      },
+      "price": 9500,
+      "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600",
+      "tags": ["sin-tacc"],
+      "featured": false
+    },
+    {
+      "id": "pri-3",
+      "name": {
+        "es": "Bife de Chorizo Premium",
+        "en": "Premium Sirloin Steak",
+        "pt": "Bife Ancho Premium"
+      },
+      "description": {
+        "es": "Bife de chorizo angus sellado a la parrilla, guarnición de papas al romero y chimichurri tradicional.",
+        "en": "Angus sirloin steak seared on the grill, with rosemary potatoes and traditional chimichurri.",
+        "pt": "Bife ancho angus selado na grelha, com guarnição de batatas ao alecrim e chimichurri tradicional."
+      },
+      "price": 12000,
+      "image": "https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600",
+      "tags": ["recomendado"],
+      "featured": true
+    },
+    {
+      "id": "pri-4",
+      "name": {
+        "es": "Pasta Artesanal al Pesto",
+        "en": "Artisanal Pasta with Pesto",
+        "pt": "Massa Artesanal ao Pesto"
+      },
+      "description": {
+        "es": "Fettuccine artesanal con pesto genovés, tomates secos, piñones y parmesano rallado.",
+        "en": "Artisanal fettuccine with Genovese pesto, sun-dried tomatoes, pine nuts, and grated parmesan.",
+        "pt": "Fettuccine artesanal com pesto genovês, tomates secos, pinhões e parmesão ralado."
+      },
+      "price": 7800,
+      "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600",
+      "tags": ["vegetariano"],
+      "featured": false
+    }
+  ],
+  "postres": [
+    {
+      "id": "pos-1",
+      "name": {
+        "es": "Tiramisú Clásico",
+        "en": "Classic Tiramisu",
+        "pt": "Tiramisu Clássico"
+      },
+      "description": {
+        "es": "Tiramisú tradicional italiano con mascarpone, café espresso, cacao amargo y licor de almendras.",
+        "en": "Traditional Italian tiramisu with mascarpone, espresso coffee, bitter cocoa, and almond liqueur.",
+        "pt": "Tiramisu tradicional italiano com mascarpone, café expresso, cacau amargo e licor de amêndoas."
+      },
+      "price": 5200,
+      "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600",
+      "tags": ["recomendado"],
+      "featured": true
+    },
+    {
+      "id": "pos-2",
+      "name": {
+        "es": "Cheesecake de Maracuyá",
+        "en": "Passion Fruit Cheesecake",
+        "pt": "Cheesecake de Maracujá"
+      },
+      "description": {
+        "es": "Cheesecake cremoso sobre base de galleta, cubierto con coulis de maracuyá y frutos rojos.",
+        "en": "Creamy cheesecake on a cookie base, topped with passion fruit coulis and berries.",
+        "pt": "Cheesecake cremoso sobre base de biscoito, coberto com coulis de maracujá e frutas vermelhas."
+      },
+      "price": 4800,
+      "image": "https://images.unsplash.com/photo-1524351199678-941a58a3df50?w=600",
+      "tags": ["vegetariano"],
+      "featured": false
+    },
+    {
+      "id": "pos-3",
+      "name": {
+        "es": "Volcán de Chocolate",
+        "en": "Chocolate Lava Cake",
+        "pt": "Vulcão de Chocolate"
+      },
+      "description": {
+        "es": "Bizcocho de chocolate con centro líquido, servido con helado de vainilla y fresas frescas.",
+        "en": "Chocolate sponge cake with a liquid center, served with vanilla ice cream and fresh strawberries.",
+        "pt": "Bolo de chocolate com centro líquido, servido com sorvete de baunilha e morangos frescos."
+      },
+      "price": 5500,
+      "image": "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=600",
+      "tags": ["recomendado"],
+      "featured": true
+    },
+    {
+      "id": "pos-4",
+      "name": {
+        "es": "Crème Brûlée de Lavanda",
+        "en": "Lavender Crème Brûlée",
+        "pt": "Crème Brûlée de Lavanda"
+      },
+      "description": {
+        "es": "Clásica crème brûlée infusionada con lavanda, con capa de caramelo crujiente y frutos rojos.",
+        "en": "Classic crème brûlée infused with lavender, with a crispy caramel layer and berries.",
+        "pt": "Clássica crème brûlée infusionada com lavanda, com camada de caramelo crocante e frutas vermelhas."
+      },
+      "price": 4900,
+      "image": "https://images.unsplash.com/photo-1470324161839-ce2bb6fa6bc3?w=600",
+      "tags": ["sin-tacc", "vegetariano"],
+      "featured": false
+    }
+  ],
+  "bebidas": [
+    {
+      "id": "beb-1",
+      "name": {
+        "es": "Maracuyá Sour",
+        "en": "Passion Fruit Sour",
+        "pt": "Maracujá Sour"
+      },
+      "description": {
+        "es": "Cóctel de autor con pisco, maracuyá fresco, lima, jarabe de jengibre y clara de huevo.",
+        "en": "Signature cocktail with pisco, fresh passion fruit, lime, ginger syrup, and egg white.",
+        "pt": "Coquetel de autor com pisco, maracujá fresco, limão, xarope de gengibre e clara de ovo."
+      },
+      "price": 4500,
+      "image": "https://images.unsplash.com/photo-1551751299-1b51cab2694c?w=600",
+      "tags": ["recomendado"],
+      "featured": true
+    },
+    {
+      "id": "beb-2",
+      "name": {
+        "es": "Limonada de Frutos Rojos",
+        "en": "Berry Lemonade",
+        "pt": "Limonada de Frutas Vermelhas"
+      },
+      "description": {
+        "es": "Limonada natural con frutos rojos macerados, menta fresca y un toque de agua tónica.",
+        "en": "Natural lemonade with macerated berries, fresh mint, and a splash of tonic water.",
+        "pt": "Limonada natural com frutas vermelhas maceradas, hortelã fresca e um toque de água tônica."
+      },
+      "price": 3200,
+      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600",
+      "tags": ["vegano", "vegetariano"],
+      "featured": false
+    },
+    {
+      "id": "beb-3",
+      "name": {
+        "es": "Vino Malbec Reserva",
+        "en": "Malbec Reserva Wine",
+        "pt": "Vinho Malbec Reserva"
+      },
+      "description": {
+        "es": "Copa de Malbec reserva de bodega Catena Zapata, con notas de ciruela y chocolate amargo.",
+        "en": "Glass of Malbec reserva from Catena Zapata winery, with notes of plum and dark chocolate.",
+        "pt": "Taça de Malbec reserva da vinícola Catena Zapata, com notas de ameixa e chocolate amargo."
+      },
+      "price": 5800,
+      "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600",
+      "tags": ["recomendado"],
+      "featured": false
+    },
+    {
+      "id": "beb-4",
+      "name": {
+        "es": "Té Imperial Pomelo",
+        "en": "Imperial Grapefruit Tea",
+        "pt": "Chá Imperial de Toranja"
+      },
+      "description": {
+        "es": "Infusión fría de té verde con pomelo rosado, jengibre y miel de flores silvestres.",
+        "en": "Cold brew green tea with pink grapefruit, ginger, and wildflower honey.",
+        "pt": "Infusão fria de chá verde com toranja rosa, gengibre e mel de flores silvestres."
+      },
+      "price": 2800,
+      "image": "https://images.unsplash.com/photo-1556881286-fc6915169721?w=600",
+      "tags": ["vegano", "vegetariano", "sin-tacc"],
+      "featured": false
+    }
+  ]
+}
